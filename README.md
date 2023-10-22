@@ -1,5 +1,5 @@
 # web-425
- Bellevue University - Angular with Typescript
+ Bellevue University - Angular with Typescriptinstal
 
 ## Contributors
 * Professor Richard Krasso
