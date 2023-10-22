@@ -1,0 +1,25 @@
+{
+  "name": "web-425",
+  "version": "1.0.0",
+  "description": "Bellevue University - Angular with Typescript",
+  "main": "index.js",
+  "scripts": {
+    "person-class": "tsc && node dist/person.class.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jharp949/web-425.git"
+  },
+  "author": "James Harper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jharp949/web-425/issues"
+  },
+  "homepage": "https://github.com/Jharp949/web-425#readme",
+  "devDependencies": {
+    "@types/node": "^20.8.7",
+    "tslint": "^6.1.3",
+    "typescript": "^5.2.2"
+  }
+}
