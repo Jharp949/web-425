@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'profile-app';
+  assignment: string = 'Assignment 1.5 - Components';
 }
