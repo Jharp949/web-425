@@ -14,16 +14,8 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: '',
-    component: ContactComponent
-  },
-  {
     path: 'contact',
     component: ContactComponent
-  },
-  {
-    path: '',
-    component: AboutComponent
   },
   {
     path: 'about',
