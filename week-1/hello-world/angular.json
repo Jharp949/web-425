@@ -24,9 +24,19 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.css"
             ],
             "scripts": []
+=======
+              "../node_modules/bootstrap/dist/css/bootstrap.css",
+              "src/styles.css"
+            ],
+            "scripts": [
+              "../node_modules/jquery/dist/jquery.js",
+              "../node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
+>>>>>>> 2e52b666b5e452620d5d1153ce6c5d58747a5e94
           },
           "configurations": {
             "production": {
@@ -119,6 +129,15 @@
           }
         }
       }
+<<<<<<< HEAD
     }},
   "defaultProject": "hello-world"
+=======
+    }
+  },
+  "defaultProject": "hello-world",
+  "cli": {
+    "analytics": "f1b2317f-908c-4bc7-aa09-ece9964be689"
+  }
+>>>>>>> 2e52b666b5e452620d5d1153ce6c5d58747a5e94
 }
