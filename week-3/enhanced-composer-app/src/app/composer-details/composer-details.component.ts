@@ -20,4 +20,8 @@ export class ComposerDetailsComponent implements OnInit {
       this.composer = new Composer().getComposer(this.composerId);
     }
   }
+
+  ngOnInit(): void {
+
+  }
 }

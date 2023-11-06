@@ -10,6 +10,7 @@ Description: HTML component routed from composer-list.ts
   <thead  class="table-dark">
     <!--Display table heading for full name and genre-->
     <tr>
+      <th  scope="col">Composer ID</th>
       <th  scope="col">Full name</th>
       <th  scope="col">Genre</th>
     </tr>
@@ -19,7 +20,7 @@ Description: HTML component routed from composer-list.ts
     <tr>
       <td scope="row"> <a routerLink="/composer-details/{{composer.composerId}}">{{ composer.composerId }}</a></td>
       <td>{{ composer.fullName }}</td>
-      <td>{{composer.genre}}</td>
+      <td>{{ composer.genre }}</td>
     </tr>
   </tbody>
 </table>
