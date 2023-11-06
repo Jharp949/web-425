@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "secure-profile-app": {
+    "enhanced-secure-profile-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/secure-profile-app",
+            "outputPath": "dist/enhanced-secure-profile-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "secure-profile-app:build"
+            "browserTarget": "enhanced-secure-profile-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "secure-profile-app:build:production"
+              "browserTarget": "enhanced-secure-profile-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "secure-profile-app:build"
+            "browserTarget": "enhanced-secure-profile-app:build"
           }
         },
         "test": {
@@ -114,18 +114,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "secure-profile-app:serve"
+            "devServerTarget": "enhanced-secure-profile-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "secure-profile-app:serve:production"
+              "devServerTarget": "enhanced-secure-profile-app:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "secure-profile-app",
+  "defaultProject": "enhanced-secure-profile-app",
   "cli": {
     "analytics": "5dadfb15-ca25-4808-a274-61fdf0e85a8d"
   }
