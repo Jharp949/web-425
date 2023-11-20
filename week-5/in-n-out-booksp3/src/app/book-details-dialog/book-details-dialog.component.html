@@ -1,0 +1,25 @@
+<!--
+Author: James Harper
+Title: book-details-dialog.html
+Date: 11/19/23
+Description: HTML Component for the details pop up dialog
+-->
+
+<mat-card>
+  <mat-card-title class="blue">
+    {{ book.title }}
+  </mat-card-title>
+  <br /><br />
+  <mat-card-content>
+    <div fxLayout="column" class="book-details">
+      <p>ISBN: {{ book.isbn }}</p>
+
+      <p>Description:<br /> {{ book.description }}</p>
+
+      <p>Authors:<br /> {{ book.authors.join(', ')}}</p>
+    </div>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-raised-button color="accent" matDialogClose="confirm">OK</button>
+  </mat-card-actions>
+</mat-card>
