@@ -10,6 +10,10 @@ Description: HTML component routed from composer-list.ts
   <thead  class="table-dark">
     <!--Display table heading for full name and genre-->
     <tr>
+<<<<<<< HEAD
+=======
+      <th  scope="col">Composer ID</th>
+>>>>>>> a7f82163e183e370c5382aae38d84fce2042839d
       <th  scope="col">Full name</th>
       <th  scope="col">Genre</th>
     </tr>
@@ -17,8 +21,14 @@ Description: HTML component routed from composer-list.ts
   <!--Display composer data from the composer list component-->
   <tbody *ngFor="let composer of composers">
     <tr>
+<<<<<<< HEAD
       <td scope="row">{{ composer.fullName }}</td>
       <td>{{composer.genre}}</td>
+=======
+      <td scope="row"> <a routerLink="/composer-details/{{composer.composerId}}">{{ composer.composerId }}</a></td>
+      <td>{{ composer.fullName }}</td>
+      <td>{{ composer.genre }}</td>
+>>>>>>> a7f82163e183e370c5382aae38d84fce2042839d
     </tr>
   </tbody>
 </table>

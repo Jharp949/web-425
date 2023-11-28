@@ -25,6 +25,11 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
+              "src/styles.css"
+            ],
+            "scripts": []
+=======
               "../node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
@@ -32,6 +37,7 @@
               "../node_modules/jquery/dist/jquery.js",
               "../node_modules/bootstrap/dist/js/bootstrap.js"
             ]
+>>>>>>> 649255bc54740929714e669f0789af658088b0a7
           },
           "configurations": {
             "production": {

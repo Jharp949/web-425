@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "composer-app": {
+=======
+    "enhanced-composer-app": {
+>>>>>>> a7f82163e183e370c5382aae38d84fce2042839d
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +17,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/composer-app",
+=======
+            "outputPath": "dist/enhanced-composer-app",
+>>>>>>> a7f82163e183e370c5382aae38d84fce2042839d
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +74,30 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "composer-app:build"
           },
           "configurations": {
             "production": {
               "browserTarget": "composer-app:build:production"
+=======
+            "browserTarget": "enhanced-composer-app:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "enhanced-composer-app:build:production"
+>>>>>>> a7f82163e183e370c5382aae38d84fce2042839d
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "composer-app:build"
+=======
+            "browserTarget": "enhanced-composer-app:build"
+>>>>>>> a7f82163e183e370c5382aae38d84fce2042839d
           }
         },
         "test": {
@@ -114,19 +134,35 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
+<<<<<<< HEAD
             "devServerTarget": "composer-app:serve"
           },
           "configurations": {
             "production": {
               "devServerTarget": "composer-app:serve:production"
+=======
+            "devServerTarget": "enhanced-composer-app:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "enhanced-composer-app:serve:production"
+>>>>>>> a7f82163e183e370c5382aae38d84fce2042839d
             }
           }
         }
       }
     }
   },
+<<<<<<< HEAD
   "defaultProject": "composer-app",
   "cli": {
     "analytics": false
   }
 }
+=======
+  "defaultProject": "enhanced-composer-app",
+  "cli": {
+    "analytics": false
+  }
+}
+>>>>>>> a7f82163e183e370c5382aae38d84fce2042839d

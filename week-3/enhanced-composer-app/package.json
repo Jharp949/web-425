@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "composer-app",
+=======
+  "name": "enhanced-composer-app",
+>>>>>>> a7f82163e183e370c5382aae38d84fce2042839d
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

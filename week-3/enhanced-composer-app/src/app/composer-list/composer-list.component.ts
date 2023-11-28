@@ -5,6 +5,7 @@
 
 //Import component and oninit from angular
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 
 //Define and export a composer class
 export default class Composer{
@@ -19,6 +20,10 @@ export default class Composer{
     this.genre = genre;
   }
 }
+=======
+import { IComposer } from '../composer.interface';
+import { Composer } from '../composer.class';
+>>>>>>> a7f82163e183e370c5382aae38d84fce2042839d
 
 //Create and export a component for composer-list
 @Component({
@@ -28,6 +33,7 @@ export default class Composer{
 })
 export class ComposerListComponent implements OnInit {
 
+<<<<<<< HEAD
   //Declare an array of composer objects as part of the component
   composers: Array<Composer>;
 
@@ -41,6 +47,13 @@ export class ComposerListComponent implements OnInit {
       new Composer("Hans Florian Zimmer", "Post Modern")
     ]
    }
+=======
+  composers: Array<IComposer>;
+
+  constructor() {
+    this.composers = new Composer().getComposers();
+  }
+>>>>>>> a7f82163e183e370c5382aae38d84fce2042839d
 
   ngOnInit(): void {
   }
