@@ -25,6 +25,8 @@ import { MatTableModule } from '@angular/material/table';
 import { BookDetailsDialogComponent } from './book-details-dialog/book-details-dialog.component';
 
 import { MatDialogModule } from '@angular/material/dialog';
+import { WishlistComponent } from './wishlist/wishlist.component';
+import { WishlistCreateComponent } from './wishlist-create/wishlist-create.component';
 
 // Create and export the app module, declaring and importing all components and Material modules
 @NgModule({
@@ -33,7 +35,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     AboutComponent,
     ContactComponent,
     BookListComponent,
-    BookDetailsDialogComponent
+    BookDetailsDialogComponent,
+    WishlistComponent,
+    WishlistCreateComponent
   ],
   imports: [
     BrowserModule,
