@@ -25,6 +25,12 @@ import { MatTableModule } from '@angular/material/table';
 import { BookDetailsDialogComponent } from './book-details-dialog/book-details-dialog.component';
 
 import { MatDialogModule } from '@angular/material/dialog';
+import { WishlistComponent } from './wishlist/wishlist.component';
+import { WishlistCreateComponent } from './wishlist-create/wishlist-create.component';
+
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input'
 
 // Create and export the app module, declaring and importing all components and Material modules
 @NgModule({
@@ -33,7 +39,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     AboutComponent,
     ContactComponent,
     BookListComponent,
-    BookDetailsDialogComponent
+    BookDetailsDialogComponent,
+    WishlistComponent,
+    WishlistCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +54,10 @@ import { MatDialogModule } from '@angular/material/dialog';
     FlexLayoutModule,
     MatIconModule,
     MatTableModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
