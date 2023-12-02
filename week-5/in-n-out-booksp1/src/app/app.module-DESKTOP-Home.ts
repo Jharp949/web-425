@@ -1,9 +1,3 @@
-// Author: James Harper
-// Title: app.module.ts
-// Date: 11/19/23
-// Description: Typescript for app modules
-
-// Imported modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -21,27 +15,12 @@ import { MatListModule } from '@angular/material/list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
 
-import { MatTableModule } from '@angular/material/table';
-import { BookDetailsDialogComponent } from './book-details-dialog/book-details-dialog.component';
-
-import { MatDialogModule } from '@angular/material/dialog';
-import { WishlistComponent } from './wishlist/wishlist.component';
-import { WishlistCreateComponent } from './wishlist-create/wishlist-create.component';
-
-import { FormsModule } from '@angular/forms';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-
-// Create and export the app module, declaring and importing all components and Material modules
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     ContactComponent,
-    BookListComponent,
-    BookDetailsDialogComponent,
-    WishlistComponent,
-    WishlistCreateComponent
+    BookListComponent
   ],
   imports: [
     BrowserModule,
@@ -52,9 +31,7 @@ import { MatInputModule } from '@angular/material/input';
     MatButtonModule,
     MatListModule,
     FlexLayoutModule,
-    MatIconModule,
-    MatTableModule,
-    MatDialogModule
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
