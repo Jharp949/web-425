@@ -10,7 +10,7 @@ export class AppComponent {
   assignment: string;
 
   constructor() {
-    this.assignment = 'Exercise 5.4 - Dialogs'
+    this.assignment = 'Exercise 6.2 - Input/Output Properties, Part 1'
   }
 
 }
