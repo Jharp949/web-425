@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class BaseLayoutComponent {
 
+  assignment: string;
+
+  constructor() {
+    this.assignment = "Exercise 6.3 - Layouts";
+  }
+  
 }
