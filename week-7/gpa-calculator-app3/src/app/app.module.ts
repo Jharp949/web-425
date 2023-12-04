@@ -19,8 +19,9 @@ import { GradeSummaryComponent } from './grade-summary/grade-summary.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { MatSelectModule } from '@angular/material/select';
     NotFoundComponent,
     HomeComponent,
     GpaComponent,
-    GradeSummaryComponent
+    GradeSummaryComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,8 @@ import { MatSelectModule } from '@angular/material/select';
     MatInputModule,
     MatListModule,
     FormsModule,
-    MatSelectModule
+    MatSelectModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,6 +4,7 @@ import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
 import { BaseLayoutComponent } from './base-layout/base-layout.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,11 @@ const routes: Routes = [
       {
         path: 'not-found',
         component: NotFoundComponent
+      },
+      {
+        //Sign in path component
+        path: "sign-in",
+        component: SignInComponent
       }
     ]
   },
