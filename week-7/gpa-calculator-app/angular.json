@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "gpa-calculator-app"
+  "defaultProject": "gpa-calculator-app",
+  "cli": {
+    "analytics": false
+  }
 }
