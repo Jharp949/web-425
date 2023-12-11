@@ -1,11 +1,12 @@
-//Author: James Harper
-//Title: base-layout.component.ts
-//Date: 12/02/23
-//Description: Typescript for home component
+// Author: James Harper
+// Title: base-layout.component.ts
+// Date: 12/02/23
+// Description: Typescript for home component
 
-//Import Component, oninit, and the transcript interface
+// Import Component, oninit, and the transcript interface
 import { Component, OnInit } from '@angular/core';
 import { ITranscript } from '../transcript.interface';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -19,16 +20,28 @@ export class HomeComponent implements OnInit {
   transcriptEntries: Array<ITranscript> = [];
   gpaTotal: number = 0;;
 
-  constructor() {
+   // Create a transcript form variable of type form group
+   transcriptForm: FormGroup;
+
+   // Declare a blank constructor with the form builder passed in
+  constructor(private fb: FormBuilder) {
     this.transcriptEntry = {} as ITranscript;
   }
-
+  // On init, call the form builder variable and set up its validators
   ngOnInit(): void {
+    this.transcriptForm = this.fb.group({ course: ['', Validators.required ], grade: ['', Validators.required]});
   }
 
-  saveEntry() {
-    this.transcriptEntries.push(this.transcriptEntry);
-    this.transcriptEntry = {} as ITranscript;
+   // Call get and return the form controls
+   get form(){return this.transcriptForm.controls}
+  // Create a function for storing transcript entries
+  onSubmit(event) {
+    this.transcriptEntries.push({
+      course: this.form.course.value,
+      grade: this.form.grade.value
+    });
+    // Reset the form
+    event.currentTarget.reset();
   }
 
   calculateResults() {
